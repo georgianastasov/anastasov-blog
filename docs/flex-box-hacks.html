@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="https://www.pngkit.com/png/full/705-7052629_airbus-a-favicon.png"/>
+</head>
+<body class="flexbox-hacks">
+    <div class="site">
+        <input type="checkbox" id="nav-main-toggle" name="nav-main-toggle">
+<header class="site-header">
+    <div class="wrapper">
+        <div class="site-branding">
+            <a class="title" href="/">anastasov blog</a>
+            <p class="desc">Interesting part of web front-end.</p>
+        </div>
+        <label id="nav-toggle" for="nav-main-toggle" class="fas" for=""><span></span></label>
+        <nav class="navigation">
+            <ul>
+                <li><a class="fas fa-key" href="/login/">Login</a></li>
+                <li><a class="fas fa-newspaper" href="/">Blog</a></li>
+                <li><a class="fas fa-address-card" href="/about/">About</a></li>
+                <li><a class="fas fa-phone-square-alt" href="/contacts/">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        <section class="wrapper">
+    <h1 class="title">Flexbox hacks</h1>
+    <p class="author">By Georgi Anastasov Sep 04, 2021</p>
+    <br>
+    <p>The Germans broke my CSS a while ago. Well, not literally, but their long words did. A few days before the issue occurred, I saw a talk by Zoe Mickley Gillenwater at Frontend United entitled “Using Flexbox Today”. That talk inspired me to solve the problem with flexbox.</p>
+    <br>
+    <p>Before I explain the flex-grow 9999 hack in detail, let me briefly describe what it does. The flex-grow 9999 hack makes a flex item behave like it has two flex grow values. It prevents a flex item in a row from growing, but allows it to grow if it’s wrapped into its own line. All without the use of media queries.</p>
+    <br>
+    <p>If that didn’t make sense, don’t worry. The example should make it clear.</p>
+    <br>
+    <p>Imagine a flex container (display: flex) with two flex items in a row (flex-direction: row). Item A on the left, and item B on the right. Item A can not grow, so I give it a flex-grow value of 0 (the default value). Item B has to take up all the remaining space in the container. This can be done with flex-grow: 1.</p>
+    <br>
+    <p>I would like the flex items to be stacked on top of each other when necessary. Item B has to jump onto the second line, if there’s not enough space for it to be at least 20 ems wide. Adding flex-wrap: wrap to the container and flex-basis: 20em to item B does the job.</p>
+</section>
+
+        <footer class="site-footer">
+    <div class="wrapper">
+        <p>Random try for personal blog and usefull information for the comunity.</p>
+        <p>Design by <a href="https://github.com/georgianastasov" target="_blank">Me</a>. Let me know what you think.</p>
+        <p> <a href="https://www.instagram.com/georgiaanastasov/" target="_blank">@georgiaanastasov</a> </p>
+        <p>All righrs <span>&copy;</span> reserved.</p>
+    </div>
+</footer>
+    </div>
+</body>
+</html>

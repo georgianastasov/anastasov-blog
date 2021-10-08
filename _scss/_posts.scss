@@ -1,0 +1,22 @@
+section.wrapper {
+    max-width: 60vw;
+    margin: 0 auto;
+    color: rgb(54, 54, 54);
+
+    .title {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .author {
+        font-size: 80%;
+    }
+
+    a {
+        color: black;
+
+        &:hover {
+            font-weight: 600;
+        }
+    }
+}

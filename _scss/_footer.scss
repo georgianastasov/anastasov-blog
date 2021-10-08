@@ -1,0 +1,32 @@
+.site-footer {
+
+    .wrapper {
+        text-align: center;
+        font-size: 90%;
+        color: rgb(54, 54, 54);
+        border-top: 2px solid rgb(212, 212, 212);
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+    
+    a, span {
+        color: black;
+        font-size: 100%;
+    }
+    
+    a {
+        text-decoration: none;
+
+        &:hover {
+            color: white;
+            text-shadow: 2px 1px 6px rgba(68, 68, 68, 1);
+        }
+
+        &:focus {
+            background: none;
+            box-shadow: none;
+        }
+    }
+}
